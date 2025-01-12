@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="890.0" style="-fx-background-color: #444444; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: #444444;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CountryController">
+   <children>
+      <Line endX="-70.5999755859375" endY="142.1999969482422" layoutX="437.0" layoutY="25.0" startX="-70.5999755859375" startY="-12.199991226196289" stroke="#dfdfdf" strokeWidth="3.0" />
+      <VBox layoutX="7.0" prefHeight="180.0" prefWidth="332.0">
+         <children>
+            <AnchorPane prefHeight="116.0" prefWidth="332.0">
+               <children>
+                  <ImageView fx:id="countryImgView" fitHeight="78.0" fitWidth="83.0" layoutX="127.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../FLAGEgypt.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="countryNameLabel" alignment="CENTER" layoutX="42.0" prefHeight="56.0" prefWidth="247.0" text="Egypt" textFill="#dfdfdf">
+                     <font>
+                        <Font name="Tahoma Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="430.0" prefHeight="180.0" prefWidth="420.0">
+         <children>
+            <HBox layoutX="3.0" layoutY="5.0" prefHeight="170.0" prefWidth="410.0">
+               <children>
+                  <AnchorPane prefHeight="170.0" prefWidth="278.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="3.0" layoutY="21.0" prefHeight="125.0" prefWidth="245.0" text="No. of Players: " textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="170.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="countryPlayerCountLabel" alignment="CENTER" layoutX="7.0" layoutY="52.0" prefHeight="78.0" prefWidth="146.0" text="4" textFill="#d7d434">
+                           <font>
+                              <Font name="Tahoma" size="53.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="890.0" style="-fx-background-color: #444444; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: #444444;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlayerController">
+   <children>
+      <HBox layoutX="-1.0" prefHeight="180.0" prefWidth="222.0">
+         <children>
+            <Label fx:id="labelJerseyNo" alignment="CENTER" contentDisplay="TOP" prefHeight="180.0" prefWidth="74.0" text=" 11" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="44.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="playerImgView" fitHeight="169.0" fitWidth="160.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../MohamedSalah.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="8.0" />
+               </HBox.margin></ImageView>
+         </children>
+      </HBox>
+      <VBox layoutX="224.0" prefHeight="180.0" prefWidth="222.0">
+         <children>
+            <Label fx:id="labelName1" alignment="BOTTOM_LEFT" prefHeight="50.0" prefWidth="219.0" text="MOHAMED" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Tahoma" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelName2" alignment="TOP_LEFT" prefHeight="85.0" prefWidth="218.0" text="SALAH" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Tahoma" size="39.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelPosition" alignment="TOP_LEFT" prefHeight="26.0" prefWidth="174.0" text="Forward" textFill="#cfc9c9">
+               <font>
+                  <Font name="Calibri Light" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Line endX="-70.5999755859375" endY="142.1999969482422" layoutX="515.0" layoutY="25.0" startX="-70.5999755859375" startY="-12.199991226196289" stroke="#dfdfdf" strokeWidth="3.0" />
+      <ImageView fx:id="clubImgView" fitHeight="78.0" fitWidth="66.0" layoutX="644.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Liverpool.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="countryImgView" fitHeight="76.0" fitWidth="66.0" layoutX="643.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../FLAGEgypt.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="493.0" prefHeight="180.0" prefWidth="150.0">
+         <children>
+            <Label fx:id="labelAge" alignment="BASELINE_LEFT" prefHeight="57.0" prefWidth="154.0" text="Age : 28" textFill="#ccc5c5">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelHeight" alignment="BASELINE_LEFT" prefHeight="62.0" prefWidth="178.0" text="Height : 1.75m" textFill="#ccc5c5">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelSalary" alignment="BASELINE_LEFT" prefHeight="79.0" prefWidth="150.0" text="\$200000" textFill="#ffba30">
+               <font>
+                  <Font name="Tahoma" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox layoutX="738.0" layoutY="56.0" prefHeight="61.0" prefWidth="129.0">
+         <children>
+            <Button fx:id="buttonSellPlayer" alignment="CENTER" mnemonicParsing="false" onAction="#onActionSellPlayer" prefHeight="71.0" prefWidth="133.0" style="-fx-background-color: #E01414; -fx-border-radius: 10; -fx-background-radius: 10;" text="Sell Player" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
